@@ -1,0 +1,262 @@
+[
+  {
+    "id": 231,
+    "name": "Pyramid Warden",
+    "effect": "Frontline.\u003cbr\u003eAfterlife: Your opponent summons a random creature from their void.",
+    "god": "neutral",
+    "rarity": "rare",
+    "tribe": {
+      "String": "anubian",
+      "Valid": true
+    },
+    "mana": 2,
+    "attack": {
+      "Int64": 2,
+      "Valid": true
+    },
+    "health": {
+      "Int64": 6,
+      "Valid": true
+    },
+    "type": "creature",
+    "set": "genesis",
+    "collectable": true,
+    "live": "true",
+    "art_id": "C242",
+    "lib_id": "L1-231"
+  },
+  {
+    "id": 94,
+    "name": "Demogorgon",
+    "effect": "Leech.\u003cbr\u003eAt the end of your turn, deal 3 damage to a random sleeping enemy creature.\u003cbr\u003eRoar: All other creatures go to sleep.",
+    "god": "neutral",
+    "rarity": "epic",
+    "tribe": {
+      "String": "nether",
+      "Valid": true
+    },
+    "mana": 7,
+    "attack": {
+      "Int64": 4,
+      "Valid": true
+    },
+    "health": {
+      "Int64": 6,
+      "Valid": true
+    },
+    "type": "creature",
+    "set": "genesis",
+    "collectable": true,
+    "live": "true",
+    "art_id": "C376",
+    "lib_id": "L1-094"
+  },
+  {
+    "id": 2337,
+    "name": "Ember Oni",
+    "effect": "Leech. Burn 2. \u003cbr\u003eRoar: Deal 2 damage to each other creature, and give them burn +2.",
+    "god": "neutral",
+    "rarity": "common",
+    "tribe": {
+      "String": "nether",
+      "Valid": true
+    },
+    "mana": 7,
+    "attack": {
+      "Int64": 5,
+      "Valid": true
+    },
+    "health": {
+      "Int64": 7,
+      "Valid": true
+    },
+    "type": "creature",
+    "set": "wolf",
+    "collectable": true,
+    "live": "true",
+    "art_id": "C15-038",
+    "lib_id": "L15-038"
+  },
+  {
+    "id": 1283,
+    "name": "Call of the Light",
+    "effect": "Add three 2/2 Acolytes to your hand.",
+    "god": "light",
+    "rarity": "common",
+    "tribe": {
+      "String": "",
+      "Valid": false
+    },
+    "mana": 2,
+    "attack": {
+      "Int64": 0,
+      "Valid": false
+    },
+    "health": {
+      "Int64": 0,
+      "Valid": false
+    },
+    "type": "spell",
+    "set": "core",
+    "collectable": true,
+    "live": "true",
+    "art_id": "C2-284",
+    "lib_id": "L2-284"
+  },
+  {
+    "id": 2261,
+    "name": "Candy Chain",
+    "effect": "After you play a spell, shuffle a Candy Link into your opponent's deck, and remove 1 durability from this relic.",
+    "god": "deception",
+    "rarity": "epic",
+    "tribe": {
+      "String": "",
+      "Valid": false
+    },
+    "mana": 3,
+    "attack": {
+      "Int64": 0,
+      "Valid": true
+    },
+    "health": {
+      "Int64": 5,
+      "Valid": true
+    },
+    "type": "weapon",
+    "set": "wander",
+    "collectable": true,
+    "live": "true",
+    "art_id": "C14-012",
+    "lib_id": "L14-012"
+  },
+  {
+    "id": 368,
+    "name": "Aeneas",
+    "effect": "Blitz. Twin strike. Protected.\u003cbr\u003eAt the end of your turn, this creature becomes protected.",
+    "god": "war",
+    "rarity": "legendary",
+    "tribe": {
+      "String": "olympian",
+      "Valid": true
+    },
+    "mana": 6,
+    "attack": {
+      "Int64": 3,
+      "Valid": true
+    },
+    "health": {
+      "Int64": 3,
+      "Valid": true
+    },
+    "type": "creature",
+    "set": "genesis",
+    "collectable": true,
+    "live": "true",
+    "art_id": "C334",
+    "lib_id": "L1-368"
+  },
+  {
+    "id": 2011,
+    "name": "Thaeriel, The Fallen",
+    "effect": "Roar: Delve three Thaeric Cultists.",
+    "god": "neutral",
+    "rarity": "legendary",
+    "tribe": {
+      "String": "",
+      "Valid": false
+    },
+    "mana": 7,
+    "attack": {
+      "Int64": 6,
+      "Valid": true
+    },
+    "health": {
+      "Int64": 9,
+      "Valid": true
+    },
+    "type": "creature",
+    "set": "verdict",
+    "collectable": true,
+    "live": "true",
+    "art_id": "C11-012",
+    "lib_id": "L11-012"
+  },
+  {
+    "id": 161,
+    "name": "Apocalypse Now",
+    "effect": "Destroy all creatures.\u003cbr\u003eDestroy all creatures again.",
+    "god": "death",
+    "rarity": "epic",
+    "tribe": {
+      "String": "",
+      "Valid": false
+    },
+    "mana": 7,
+    "attack": {
+      "Int64": 0,
+      "Valid": false
+    },
+    "health": {
+      "Int64": 0,
+      "Valid": false
+    },
+    "type": "spell",
+    "set": "genesis",
+    "collectable": true,
+    "live": "true",
+    "art_id": "C309",
+    "lib_id": "L1-161"
+  },
+  {
+    "id": 1307,
+    "name": "Eva, Baroness of the Dead",
+    "effect": "Afterlife: Transform a random creature that costs 3 or less into a 1/1 Zombie, and give it this afterlife.",
+    "god": "death",
+    "rarity": "legendary",
+    "tribe": {
+      "String": "",
+      "Valid": false
+    },
+    "mana": 2,
+    "attack": {
+      "Int64": 2,
+      "Valid": true
+    },
+    "health": {
+      "Int64": 3,
+      "Valid": true
+    },
+    "type": "creature",
+    "set": "order",
+    "collectable": true,
+    "live": "true",
+    "art_id": "C8-008",
+    "lib_id": "L8-008"
+  },
+  {
+    "id": 1308,
+    "name": "Necroscepter",
+    "effect": "At the end of your turn summon a 1/1 Zombie with leech. If you are frenzied, give that Zombie +1/+1.\u003cbr\u003eAfter a Zombie enters your void, your opponent loses 2 favor.",
+    "god": "death",
+    "rarity": "epic",
+    "tribe": {
+      "String": "",
+      "Valid": false
+    },
+    "mana": 3,
+    "attack": {
+      "Int64": 0,
+      "Valid": true
+    },
+    "health": {
+      "Int64": 1,
+      "Valid": true
+    },
+    "type": "weapon",
+    "set": "order",
+    "collectable": true,
+    "live": "true",
+    "art_id": "C8-009",
+    "lib_id": "L8-009"
+  }
+]

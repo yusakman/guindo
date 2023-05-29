@@ -1,0 +1,104 @@
+@import "../../styles/variables";
+
+.card-detail-container {
+  display: flex;
+  flex-direction: column;
+  background: rgba(48, 45, 45, 0.88);
+
+  .header-container {
+    display: flex;
+    justify-content: flex-end;
+
+    .header-icon {
+      height: 35px;
+      width: 35px;
+      margin: 5px;
+    }
+
+    .header-icon:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    // @media (max-width: 991.98px) {
+    //   flex-direction: column;
+    // }
+    @media (max-width: 767.98px) {
+      flex-direction: column;
+    }
+
+    .card-container {
+      position: relative;
+      width: 250px;
+      height: 350px;
+      margin: 0 auto;
+    }
+
+    .text-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      p {
+        font-size: 16px;
+        font-weight: 500;
+        margin: 10px;
+      }
+
+      .quality-container {
+        display: flex;
+        flex-direction: row;
+
+        .meteorite {
+          color: #fff;
+          background: linear-gradient(180deg, #321619 0%, #a64751 100%);
+          margin: 3px;
+        }
+
+        .shadow {
+          color: #fff;
+          background: linear-gradient(180deg, #412c5d 0%, #ff23e9 100%);
+          margin: 3px;
+        }
+
+        .gold {
+          color: #fff;
+          background: linear-gradient(180deg, #d7bb18 0%, #f2d900 100%);
+          margin: 3px;
+        }
+
+        .diamond {
+          color: #fff;
+          background: linear-gradient(180deg, #008aa8 0%, #6ff6ff 100%);
+          margin: 3px;
+        }
+      }
+
+      .button-container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5px;
+
+        .button-primary {
+          background: $primary;
+          color: #fff;
+          border-radius: 5px;
+          margin: 3px;
+        }
+
+        .cart-icon {
+          background: $primary;
+          color: #fff;
+          margin: 3px;
+        }
+      }
+    }
+  }
+}
