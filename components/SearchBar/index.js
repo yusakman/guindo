@@ -1,7 +1,6 @@
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import styles from "./styles.module.scss"
-import { useState } from "react";
 
 const SearchBar = (props) => {
   const { handleSearchCard } = props;

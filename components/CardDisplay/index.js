@@ -2,13 +2,9 @@ import { useEffect, useState } from "react";
 import cardsDisplay from "./cardsDisplay.json";
 import styles from "./styles.module.scss";
 import Backdrop from "@mui/material/Backdrop";
-import CircularProgress from "@mui/material/CircularProgress";
+
 import Card from "../Card";
 import Image from "next/image";
-import cardTest1 from "../../assets/cardtest1.png";
-import cardTest2 from "../../assets/cardtest2.png";
-import cardTest3 from "../../assets/cardtest3.png";
-import cardTest4 from "../../assets/cardtest4.png";
 import { useIsMounted } from "@/hooks/useIsMounted";
 import { IS_DEV } from "@/const";
 import { data } from "@/conf/cardConfig";
@@ -25,12 +21,10 @@ const CardDisplay = (props) => {
   useEffect(() => {
     const handleSearchCard = () => {
       if (searchCard) {
-        console.log("Searching for cards", searchCard);
         const card = data.filter(
           (item) =>
             item.name.toLowerCase().includes(searchCard.toLowerCase()) === true
         );
-        console.log("card is", card);
         return card;
       }
     };
@@ -38,14 +32,10 @@ const CardDisplay = (props) => {
   }, [searchCard]);
 
   const handleOpen = (card) => {
-    console.log("name", card.name);
-    console.log("id", card.id);
     setCardDetail({ name: card.name, id: card.id });
     setLoading(true);
     setOpen(true);
     setLoading(false);
-
-    return <div></div>;
   };
 
   const handleClose = () => {
@@ -64,10 +54,9 @@ const CardDisplay = (props) => {
           open={open}
         >
           <Card cardDetail={cardDetail} close={handleClose}></Card>
-          {/* <CircularProgress color="inherit" /> */}
         </Backdrop>
       </div>
-      {!IS_DEV && mounted && searchCard ? (
+      {IS_DEV && mounted && searchCard ? (
         searchResult ? (
           searchResult.map((item, index) => (
             <div
