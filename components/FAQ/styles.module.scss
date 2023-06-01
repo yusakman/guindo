@@ -1,0 +1,16 @@
+.faq {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 30px auto;
+    
+    .faq-title {
+        font-size: 20px;
+        margin: 10px 0;
+        font-weight: 500;
+    }
+
+    .faq-container {
+        margin: 5px 0;
+    }
+}

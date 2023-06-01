@@ -56,7 +56,7 @@ const CardDisplay = (props) => {
           <Card cardDetail={cardDetail} close={handleClose}></Card>
         </Backdrop>
       </div>
-      {IS_DEV && mounted && searchCard ? (
+      {!IS_DEV && mounted && searchCard ? (
         searchResult ? (
           searchResult.map((item, index) => (
             <div

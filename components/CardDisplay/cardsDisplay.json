@@ -156,6 +156,32 @@
     "lib_id": "L1-368"
   },
   {
+    "id": 1339,
+    "name": "Watchful Hound",
+    "effect": "Roar: Give order +10 to target enemy creature.\u003cbr\u003eAfterlife: Remove order from that creature.",
+    "god": "light",
+    "rarity": "common",
+    "tribe": {
+      "String": "",
+      "Valid": false
+    },
+    "mana": 3,
+    "attack": {
+      "Int64": 3,
+      "Valid": true
+    },
+    "health": {
+      "Int64": 3,
+      "Valid": true
+    },
+    "type": "creature",
+    "set": "order",
+    "collectable": true,
+    "live": "true",
+    "art_id": "C8-041",
+    "lib_id": "L8-041"
+  },
+  {
     "id": 2011,
     "name": "Thaeriel, The Fallen",
     "effect": "Roar: Delve three Thaeric Cultists.",
@@ -258,5 +284,109 @@
     "live": "true",
     "art_id": "C8-009",
     "lib_id": "L8-009"
+  },
+  {
+    "id": 87048,
+    "name": "Charging Oryx",
+    "effect": "Roar: This creature attacks a random valid character. (It will attack an enemy frontline creature if there are any. It can't attack a\u003cbr\u003ehidden creature.)",
+    "god": "nature",
+    "rarity": "common",
+    "tribe": {
+      "String": "wild",
+      "Valid": true
+    },
+    "mana": 7,
+    "attack": {
+      "Int64": 7,
+      "Valid": true
+    },
+    "health": {
+      "Int64": 7,
+      "Valid": true
+    },
+    "type": "creature",
+    "set": "welcome",
+    "collectable": true,
+    "live": "true",
+    "art_id": "C7-048",
+    "lib_id": "L7-048"
+  },
+  {
+    "id": 1330,
+    "name": "Inconspicuous Bush",
+    "effect": "Order 3.\u003cbr\u003eAfter this creature's order reaches 0, add a random card from your opponent's domain to your hand.",
+    "god": "deception",
+    "rarity": "common",
+    "tribe": {
+      "String": "",
+      "Valid": false
+    },
+    "mana": 4,
+    "attack": {
+      "Int64": 4,
+      "Valid": true
+    },
+    "health": {
+      "Int64": 4,
+      "Valid": true
+    },
+    "type": "creature",
+    "set": "order",
+    "collectable": true,
+    "live": "true",
+    "art_id": "C8-032",
+    "lib_id": "L8-032"
+  },
+  {
+    "id": 1120,
+    "name": "Vault Vagabond",
+    "effect": "After this creature attacks a god, gain a copy of the top card of your opponent's deck.",
+    "god": "deception",
+    "rarity": "common",
+    "tribe": {
+      "String": "guild",
+      "Valid": true
+    },
+    "mana": 3,
+    "attack": {
+      "Int64": 3,
+      "Valid": true
+    },
+    "health": {
+      "Int64": 3,
+      "Valid": true
+    },
+    "type": "creature",
+    "set": "core",
+    "collectable": true,
+    "live": "true",
+    "art_id": "C622",
+    "lib_id": "L2-121"
+  },
+  {
+    "id": 87035,
+    "name": "Ramshackle Hatchet",
+    "effect": "Godblitz. (Godblitz allows you to attack any opposing character when you play it.)",
+    "god": "war",
+    "rarity": "common",
+    "tribe": {
+      "String": "",
+      "Valid": false
+    },
+    "mana": 2,
+    "attack": {
+      "Int64": 3,
+      "Valid": true
+    },
+    "health": {
+      "Int64": 1,
+      "Valid": true
+    },
+    "type": "weapon",
+    "set": "welcome",
+    "collectable": true,
+    "live": "true",
+    "art_id": "C7-035",
+    "lib_id": "L7-035"
   }
 ]

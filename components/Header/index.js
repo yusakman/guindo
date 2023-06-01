@@ -31,6 +31,10 @@ const Header = () => {
             <p>Home</p>
           </Link>
 
+          <Link href="/#faq">
+            <p>FAQ</p>
+          </Link>
+
           <Link href="/checkout">
             <IconButton
               aria-label="add to shopping cart"
@@ -40,6 +44,8 @@ const Header = () => {
               <AddShoppingCartIcon />
             </IconButton>
           </Link>
+
+          
         </nav>
         <div className={styles["nav-mobile"]}>
           <MenuIcon

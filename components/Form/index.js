@@ -35,6 +35,7 @@ const InputForm = (props) => {
           required
           id="alamat-kripto"
           label="Alamat Kripto"
+          placeholder="Contoh: 0x3C4....293BC"
           variant="outlined"
           onChange={(e) => handleAddress(e)}
         />

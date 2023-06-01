@@ -17,9 +17,9 @@ export const toIDR = async (price) => {
   const totalInIDR = price * ethPrice;
 
   // Calculate fee here
-  const totalPlusFee = await calculateFee(totalInIDR);
+  const amountObject = await calculateFee(totalInIDR);
 
-  return totalPlusFee;
+  return amountObject;
 };
 
 // Let's use library

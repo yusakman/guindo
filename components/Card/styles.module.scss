@@ -84,6 +84,7 @@
       .button-container {
         display: flex;
         flex-direction: row;
+        align-items: center;
         margin-top: 5px;
 
         .button-primary {
@@ -96,7 +97,7 @@
         .cart-icon {
           background: $primary;
           color: #fff;
-          margin: 3px;
+          margin:2px;
         }
       }
 

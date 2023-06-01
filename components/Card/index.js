@@ -23,6 +23,7 @@ const Card = ({ cardDetail, close }) => {
   const [quality, setQuality] = useState("Meteorite");
   const [imgParam, setImageParam] = useState(4);
   const [totalInIDR, setTotalInIDR] = useState(0);
+  const [profit, setProfit] = useState(0);
   const [amountInCartList, setAmountInCartList] = useState(0);
 
   const cartList = useStore((state) => state.cartList);
@@ -41,11 +42,16 @@ const Card = ({ cardDetail, close }) => {
         if (!!result.length) {
           const totalInWei = await result[0].buy.data.quantity_with_fees;
           const totalInDecimal = toDecimal(totalInWei);
-          const totalInIDR = await toIDR(totalInDecimal);
-          setTotalInIDR(totalInIDR);
+          const { totalInIDR, profit } = await toIDR(totalInDecimal);
+          
+          const formatTotalInIDR = Math.ceil(totalInIDR)
+          const formatProfit = Math.ceil(profit)
+          
+          setTotalInIDR(formatTotalInIDR);
+          setProfit(formatProfit);
 
           // totalInIDR need to be sent to state
-          const formatPrice = formatCurrency(totalInIDR);
+          const formatPrice = formatCurrency(formatTotalInIDR);
           setPrice(formatPrice);
         } else {
           setTotalInIDR(0);
@@ -76,6 +82,7 @@ const Card = ({ cardDetail, close }) => {
       quality: quality,
       totalInIDR: totalInIDR ? totalInIDR : 0,
       amount: 1,
+      profit: profit,
     };
 
     // Send to cartList
@@ -115,7 +122,7 @@ const Card = ({ cardDetail, close }) => {
           ) : (
             <CircularProgress color="inherit" />
           )}
-          <p>Beli Langsung Atau Masukin Keranjang Dulu</p>
+          <p>Masukin Keranjang Dulu Gan Sebelum Checkout</p>
           <div className={styles["quality-container"]}>
             {Quality.map((item, index) => (
               <IconButton
@@ -130,13 +137,16 @@ const Card = ({ cardDetail, close }) => {
             ))}
           </div>
           <div className={styles["button-container"]}>
-            <Button
-              variant="contained"
-              className={styles["button-primary"]}
-              style={{ width: "100px" }}
-            >
-              <Link href={`/checkout`}>Beli</Link>
-            </Button>
+            {/* <Link href={`/checkout`}>
+              <Button
+                variant="contained"
+                className={styles["button-primary"]}
+                style={{ width: "100px" }}
+                onClick={(e) => handleCart(e)}
+              >
+                Beli
+              </Button>
+            </Link> */}
 
             <IconButton
               aria-label="add to shopping cart"

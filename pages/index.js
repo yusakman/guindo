@@ -6,6 +6,8 @@ import CardDisplay from "@/components/CardDisplay";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import { useState } from "react";
+import FAQ from "@/components/FAQ";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const [searchCard, setSearchCard] = useState("");
@@ -29,9 +31,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <Hero />
-      <SearchBar {...props} />
-      <CardDisplay {...props} />
+      <main>
+        <Hero />
+        <SearchBar {...props} />
+        <CardDisplay {...props} />
+        <FAQ />
+      </main>
+      <Footer />
     </>
   );
 }
